@@ -5,8 +5,8 @@
 ### 1. Cloner le dépôt
 
 ```bash
-git clone https://github.com/mohamedBenma/product-trial-master/back.git
-cd alten-shop-backend
+git clone https://github.com/mohamedBenma/Alten-Test-Technique/tree/main/product-trial-master/back
+
 ```
 
 ### 2. Installer les dépendances

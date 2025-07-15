@@ -5,8 +5,7 @@
 ### 1. Cloner le dépôt
 
 ```bash
-git clone https://github.com/mohamedBenma/product-trial-master/front-react.git
-cd alten-shop-frontend
+git clonehttps://github.com/mohamedBenma/Alten-Test-Technique/tree/main/product-trial-master/front
 ```
 
 ### 2. Installer les dépendances
