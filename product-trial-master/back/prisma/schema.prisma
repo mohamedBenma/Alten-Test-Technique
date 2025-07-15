@@ -1,0 +1,44 @@
+generator client {
+  provider = "prisma-client-js"
+  seed     = "ts-node ./prisma/seed.ts"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Product {
+  id                Int             @id @default(autoincrement())
+  code              String
+  name              String
+  description       String
+  image             String
+  price             Int
+  category          String
+  createdAt         DateTime
+  updatedAt         DateTime
+  shellId           Int
+  internalReference String
+  inventoryStatus   inventoryStatus @default(INSTOCK)
+  rating            Int
+  cartUsers     User[] @relation("UserCart")
+  wishlistUsers User[] @relation("UserWishlist")
+}
+
+
+enum inventoryStatus {
+  INSTOCK
+  LOWSTOCK
+  OUTOFSTOCK
+}
+
+model User {
+  id        Int     @id @default(autoincrement())
+  username  String
+  firstname String
+  email     String  @unique
+  password  String
+  cart      Product[] @relation("UserCart")
+  wishlist  Product[] @relation("UserWishlist")
+}
