@@ -5,7 +5,7 @@
 ### 1. Cloner le dépôt
 
 ```bash
-git clone https://github.com/ton-utilisateur/front-react/front-react.git
+git clone https://github.com/mohamedBenma/product-trial-master/front-react.git
 cd alten-shop-frontend
 ```
 
